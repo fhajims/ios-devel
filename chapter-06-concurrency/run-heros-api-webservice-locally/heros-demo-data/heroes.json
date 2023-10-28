@@ -1,0 +1,11 @@
+{ "heroes": [
+{"id":1,"name":"Ant-Man"},
+{"id":2,"name":"Aquaman"},
+{"id":3,"name":"Asterix"},
+{"id":4,"name":"The Atom"},
+{"id":5,"name":"The Avengers"},
+{"id":6,"name":"Batgirl"},
+{"id":7,"name":"Batman"},
+{"id":8,"name":"Batwoman"},
+{"id":9,"name":"Black Canary","description":"Black Canary, American comic strip superhero created for..."}
+]}

@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52728F722732E8DA00047BBB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728F712732E8DA00047BBB /* App.swift */; };
+		52728F742732E8DA00047BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728F732732E8DA00047BBB /* ContentView.swift */; };
+		52728F762732E8DE00047BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52728F752732E8DE00047BBB /* Assets.xcassets */; };
+		52728F792732E8DE00047BBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52728F782732E8DE00047BBB /* Preview Assets.xcassets */; };
+		52728F7B2732E8DE00047BBB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728F7A2732E8DE00047BBB /* Persistence.swift */; };
+		52728FA52732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52728FA32732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodeld */; };
+		5275ED7027BD7C5B008052C1 /* SlidesFromDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275ED6F27BD7C5B008052C1 /* SlidesFromDBView.swift */; };
+		5275ED7227BD7C8E008052C1 /* SingleSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275ED7127BD7C8E008052C1 /* SingleSlideView.swift */; };
+		5275ED7627BD7D63008052C1 /* PersistToSharedPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275ED7527BD7D63008052C1 /* PersistToSharedPreferenceView.swift */; };
+		5275ED7927BD81EE008052C1 /* PesristToSharedPrefsHowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275ED7827BD81EE008052C1 /* PesristToSharedPrefsHowToView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52728F6E2732E8DA00047BBB /* 7 Persist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7 Persist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52728F712732E8DA00047BBB /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		52728F732732E8DA00047BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52728F752732E8DE00047BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52728F782732E8DE00047BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52728F7A2732E8DE00047BBB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		52728FA42732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = omd_ios_devel_chapter_07_Persistency.xcdatamodel; sourceTree = "<group>"; };
+		5275ED6F27BD7C5B008052C1 /* SlidesFromDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesFromDBView.swift; sourceTree = "<group>"; };
+		5275ED7127BD7C8E008052C1 /* SingleSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSlideView.swift; sourceTree = "<group>"; };
+		5275ED7527BD7D63008052C1 /* PersistToSharedPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistToSharedPreferenceView.swift; sourceTree = "<group>"; };
+		5275ED7827BD81EE008052C1 /* PesristToSharedPrefsHowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesristToSharedPrefsHowToView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52728F6B2732E8DA00047BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52728F652732E8DA00047BBB = {
+			isa = PBXGroup;
+			children = (
+				52728F702732E8DA00047BBB /* omd-ios-devel-chapter-07-Persistency */,
+				52728F6F2732E8DA00047BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52728F6F2732E8DA00047BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52728F6E2732E8DA00047BBB /* 7 Persist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52728F702732E8DA00047BBB /* omd-ios-devel-chapter-07-Persistency */ = {
+			isa = PBXGroup;
+			children = (
+				5275ED7727BD7FA0008052C1 /* db */,
+				5275ED7427BD7D23008052C1 /* ui4sharedprefs */,
+				5275ED6E27BD7BEB008052C1 /* ui4db */,
+				52728FA32732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodeld */,
+				52728F712732E8DA00047BBB /* App.swift */,
+				52728F732732E8DA00047BBB /* ContentView.swift */,
+				52728F752732E8DE00047BBB /* Assets.xcassets */,
+				52728F772732E8DE00047BBB /* Preview Content */,
+			);
+			path = "omd-ios-devel-chapter-07-Persistency";
+			sourceTree = "<group>";
+		};
+		52728F772732E8DE00047BBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52728F782732E8DE00047BBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5275ED6E27BD7BEB008052C1 /* ui4db */ = {
+			isa = PBXGroup;
+			children = (
+				5275ED6F27BD7C5B008052C1 /* SlidesFromDBView.swift */,
+				5275ED7127BD7C8E008052C1 /* SingleSlideView.swift */,
+			);
+			path = ui4db;
+			sourceTree = "<group>";
+		};
+		5275ED7427BD7D23008052C1 /* ui4sharedprefs */ = {
+			isa = PBXGroup;
+			children = (
+				5275ED7527BD7D63008052C1 /* PersistToSharedPreferenceView.swift */,
+				5275ED7827BD81EE008052C1 /* PesristToSharedPrefsHowToView.swift */,
+			);
+			path = ui4sharedprefs;
+			sourceTree = "<group>";
+		};
+		5275ED7727BD7FA0008052C1 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				52728F7A2732E8DE00047BBB /* Persistence.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52728F6D2732E8DA00047BBB /* omd-ios-devel-chapter-07-Persistency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52728F812732E8DE00047BBB /* Build configuration list for PBXNativeTarget "omd-ios-devel-chapter-07-Persistency" */;
+			buildPhases = (
+				52728F6A2732E8DA00047BBB /* Sources */,
+				52728F6B2732E8DA00047BBB /* Frameworks */,
+				52728F6C2732E8DA00047BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "omd-ios-devel-chapter-07-Persistency";
+			productName = "omd-ios-devel-chapter-07-Persistency";
+			productReference = 52728F6E2732E8DA00047BBB /* 7 Persist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52728F662732E8DA00047BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					52728F6D2732E8DA00047BBB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 52728F692732E8DA00047BBB /* Build configuration list for PBXProject "omd-ios-devel-chapter-07-Persistency" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52728F652732E8DA00047BBB;
+			productRefGroup = 52728F6F2732E8DA00047BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52728F6D2732E8DA00047BBB /* omd-ios-devel-chapter-07-Persistency */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52728F6C2732E8DA00047BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52728F792732E8DE00047BBB /* Preview Assets.xcassets in Resources */,
+				52728F762732E8DE00047BBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52728F6A2732E8DA00047BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5275ED7627BD7D63008052C1 /* PersistToSharedPreferenceView.swift in Sources */,
+				52728F7B2732E8DE00047BBB /* Persistence.swift in Sources */,
+				52728F742732E8DA00047BBB /* ContentView.swift in Sources */,
+				52728FA52732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodeld in Sources */,
+				5275ED7027BD7C5B008052C1 /* SlidesFromDBView.swift in Sources */,
+				5275ED7227BD7C8E008052C1 /* SingleSlideView.swift in Sources */,
+				5275ED7927BD81EE008052C1 /* PesristToSharedPrefsHowToView.swift in Sources */,
+				52728F722732E8DA00047BBB /* App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52728F7F2732E8DE00047BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52728F802732E8DE00047BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52728F822732E8DE00047BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"omd-ios-devel-chapter-07-Persistency/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "7 Persistency";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.fhj.omd-ios-devel-chapter-07-Persistency";
+				PRODUCT_NAME = "7 Persist";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52728F832732E8DE00047BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"omd-ios-devel-chapter-07-Persistency/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "7 Persistency";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.fhj.omd-ios-devel-chapter-07-Persistency";
+				PRODUCT_NAME = "7 Persist";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52728F692732E8DA00047BBB /* Build configuration list for PBXProject "omd-ios-devel-chapter-07-Persistency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52728F7F2732E8DE00047BBB /* Debug */,
+				52728F802732E8DE00047BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52728F812732E8DE00047BBB /* Build configuration list for PBXNativeTarget "omd-ios-devel-chapter-07-Persistency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52728F822732E8DE00047BBB /* Debug */,
+				52728F832732E8DE00047BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52728FA32732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52728FA42732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodel */,
+			);
+			currentVersion = 52728FA42732EB3500047BBB /* omd_ios_devel_chapter_07_Persistency.xcdatamodel */;
+			path = omd_ios_devel_chapter_07_Persistency.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52728F662732E8DA00047BBB /* Project object */;
+}

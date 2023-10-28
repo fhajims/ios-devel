@@ -1,0 +1,10 @@
+/* 
+  TextForLocalisedUI.strings
+  omd-ios-devel-chapter-05-Localisation
+
+  Created by John on 03.12.21.
+  
+*/
+
+"hello" = "Hi";
+"Hello world" = "Hello";

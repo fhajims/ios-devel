@@ -1,0 +1,33 @@
+
+## Check any time the currently ignored files with:
+#  git check-ignore -v **/*
+
+# Generated documents
+study-material.pdf
+demo-apps.pdf
+
+# Build generated
+build/
+DerivedData/
+
+# Various settings
+xcuserdata/
+
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+
+# Temporary
+tmp
+TODO*
+
+# macOS
+*.webloc
+*.DS_Store*TODO*
+.DS_Store
+*TODO

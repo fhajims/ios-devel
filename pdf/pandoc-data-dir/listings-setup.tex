@@ -1,0 +1,64 @@
+%
+% color coding for swift 
+%
+% https://gist.github.com/chriseidhof/18dbc1c4eef919eab2c7
+%
+\definecolor{Light}{HTML}{F4F4F4}
+\definecolor{keyword}{HTML}{BA2CA3}
+\definecolor{string}{HTML}{D12F1B}
+\definecolor{comment}{HTML}{008400}
+
+
+\usepackage{xpatch,realboxes}
+\usepackage{xcolor}
+\lstdefinelanguage{swift}
+{
+  morekeywords={ guard, @Binding, @EnvironmentObject, @State, @Published, @main, @MainActor, import, some, print, String, @IBAction, IBOutlet,
+    open,catch,@escaping,nil,throws,func,if,then,else,for,in,while,do,switch,case,default,where,break,continue,fallthrough,return,
+    typealias,struct,class,enum,protocol,var,func,let,get,set,willSet,didSet,inout,init,deinit,extension,
+    subscript,prefix,operator,infix,postfix,precedence,associativity,left,right,none,convenience,dynamic,
+    final,lazy,mutating,nonmutating,optional,override,required,static,unowned,safe,weak,internal,
+    private,public,is,as,self,unsafe,dynamicType,true,false,nil,Type,Protocol,
+  },
+  morecomment=[l]{//}, % l is for line comment
+  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+  morestring=[b]", % defines that strings are enclosed in double quotes
+  breaklines=true,
+  escapeinside={\%*}{*)},
+% numbers=left,
+  captionpos=b,
+  breakatwhitespace=true,
+  basicstyle=\linespread{1.0}\ttfamily\footnotesize, % https://tex.stackexchange.com/a/102728/129441
+}
+
+\lstset{
+  language=swift,
+   extendedchars=\true,
+   basicstyle=\ttfamily\small,
+   showstringspaces=false, % lets spaces in strings appear as real spaces
+   columns=fixed,
+   keepspaces=true,
+   keywordstyle=\color{keyword},
+   stringstyle=\color{string},
+   commentstyle=\color{comment},
+   backgroundcolor=\color[RGB]{228,228,228},
+   tabsize=2,
+   frame=trbl,
+   frameround=tttt,
+   framesep=7pt,
+   breaklines=true,
+   postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+ % numberstyle=\tiny\ttfamily, % ERROR in PDF: numberstyle//numberstyle numberstyle numberstylePreViewnumberstyle.numberstyleswift
+ % explpreset={},       % ERROR: ! Package xkeyval Error: `explpreset' undefined in families `lst'. 
+ % inputencoding=utf8x, % ERROR: ! Package utf8x Error: Pleaseuse\usepackage{ucs}tosupportencodingutf8x.
+}
+
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{Light}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother
+
+
+% We fix special unicode character handling
+% thumb up U+1F44E
+% TODO find a more suiting latex compatible way to render the thumb-up TODO
+\DeclareUnicodeCharacter{1F44E}{THUMB-UP}

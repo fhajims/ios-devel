@@ -1,0 +1,23 @@
+/* 
+  InfoPlist.strings
+  omd-ios-devel-chapter-05-Localisation
+
+  Created by John on 03.02.23.
+  
+*/
+
+
+/*
+ 
+ For adding translations to the Info.plist
+ 
+ 1.) create a "InfoPlist.strings" file and localize it.
+ 2.) switch the view to the Target/Info/Raw Keys and Values
+ 3.) add the keys (e.g. "CFBundleDisplayName") as shown below
+ 
+ */
+
+
+
+
+"CFBundleDisplayName" = "I18n (UK)";
